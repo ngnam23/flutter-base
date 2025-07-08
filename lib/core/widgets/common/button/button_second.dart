@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:tidoy_booking_app/core/themes/app_color.dart';
 import 'package:tidoy_booking_app/core/widgets/common/text/app_text_button.dart';
 
-class ButtonPrimary extends StatelessWidget {
+class ButtonSecond extends StatelessWidget {
   final double? width;
   final VoidCallback? onPressed;
   final String label;
 
-  const ButtonPrimary({
+  const ButtonSecond({
     super.key,
     this.width,
     required this.label,
@@ -22,18 +22,18 @@ class ButtonPrimary extends StatelessWidget {
         width: width ?? double.infinity,
         height: 52,
         decoration: BoxDecoration(
-          color: AppColor.primary,
+          color: AppColor.white,
           borderRadius: BorderRadius.circular(16),
         ),
         child: ElevatedButton(
           style: ElevatedButton.styleFrom(
-            backgroundColor: AppColor.primary,
+            backgroundColor: AppColor.white,
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(16),
             ),
           ),
           onPressed: onPressed,
-          child: AppTextButton(label: label),
+          child: AppTextButton(label: label, color: AppColor.black),
         ),
       ),
     );

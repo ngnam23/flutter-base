@@ -15,7 +15,7 @@ class ImageItem extends StatelessWidget {
     this.width,
     this.height,
     this.fit = BoxFit.cover,
-    this.url,
+    this.url = '',
   });
 
   @override
